@@ -15,7 +15,7 @@ the performance difference, replacing the conversion line with:
 `	sscanf(lines[i],"%u",&nums[i]);
 `  
 which I tried to optimize by changing the %u for unsigned int to the
-SCNu32 macro for unsigned int_32 type from inttypes.h. This resulted in a run time of sscanf: *0.412s*,
+SCNu32 macro for unsigned int_32 type from inttypes.h. This resulted in a run time of *0.412s*,
 and the type specification didn't change it much.  
 
 Looking into this almost six-fold increase in run time, sscanf, I found, is notoriously slow compared
