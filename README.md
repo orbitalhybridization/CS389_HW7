@@ -13,7 +13,8 @@ Running the atoi code off the bat gave me a run time of *0.079s*.
 I chose to use sscanf from C's standard template library just to observe 
 the performance difference, replacing the conversion line with:  
 `	sscanf(lines[i],"%u",&nums[i]);
-`  which I tried to optimize by changing the %u for unsigned int to the
+`  
+which I tried to optimize by changing the %u for unsigned int to the
 SCNu32 macro for unsigned int_32 type from inttypes.h. This resulted in a run time of sscanf: *0.412s*,
 and the type specification didn't change it much.  
 
